@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html>
 <body>
+<head>
+  <style>
+    .banner {
+      width: 100%;
+      background-color: #4CAF50; /* Green background */
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 24px;
+      font-family: Arial, sans-serif;
+      position: fixed; /* stays at the top even when scrolling */
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+
+    body {
+      margin: 0;
+      padding-top: 80px; /* prevent content from being hidden under banner */
+    }
+  </style>
+</head>
 
 <h1>My First Heading </h1>
 <p style="font-family:Comic Sans MS;">I have a / to make my paragraph smaller than previous elements</p>
 <h2>Im here to test if that's how cool languages work</h2>
 
+<div class="banner">
+  Welcome to My Website! Chill here for a while
+</div>
   
 <video preload width="320" height="240" controls
   style="position: fixed; top: 0; right: 0; margin: 10px; z-index: 1000;">
