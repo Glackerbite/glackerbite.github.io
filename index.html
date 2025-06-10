@@ -42,6 +42,8 @@
 <div class="banner">
   Welcome to My Website! Chill here for a while
 </div>
+
+<img src="catchplay.gif" class="top-right-image" alt="Animated icon" id="playButton"/>
 <audio id="myAudio" autoplay loop preload>
   <source src="catch.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
@@ -49,8 +51,13 @@
   
 <script>
   const audio = document.getElementById("myAudio");
+  const button = document.getElementById("playButton");
+  button.addEventListener("click", () => {
+    audio.play();
+  });
+  
   audio.volume = 0.2; // Volume from 0.0 (silent) to 1.0 (full volume)
 </script>
-<img src="catchplay.gif" class="top-right-image" alt="Animated icon"/>
+
 </body>
 </html>
